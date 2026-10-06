@@ -144,7 +144,7 @@ bindTabs(".case-tabs","case","case-panel",key=>{
   $("case-image").src=c.image;$("case-image").alt=c.caption;
   $("case-image").width=c.width;$("case-image").height=c.height;
   $("case-figure-zoom").dataset.zoom=c.image;$("case-figure-zoom").dataset.caption=c.caption;
-  $("case-paper").href="assets/paper.pdf#page="+c.page;
+  $("case-paper").href="assets/paper.pdf?v=cdf1d42ba4fd#page="+c.page;
 });
 bindTabs(".code-tabs","code","code-panel",key=>{
   const scenario=integrationScenarios[key];
@@ -207,3 +207,4 @@ for(const button of document.querySelectorAll("[data-copy]")) button.addEventLis
 const header=document.querySelector('.site-header');
 function updateHeader(){header.classList.toggle('scrolled',window.scrollY>60);}
 window.addEventListener('scroll',updateHeader,{passive:true});updateHeader();
+
