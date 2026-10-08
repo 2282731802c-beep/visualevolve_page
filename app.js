@@ -144,7 +144,7 @@ bindTabs(".case-tabs","case","case-panel",key=>{
   $("case-image").src=c.image;$("case-image").alt=c.caption;
   $("case-image").width=c.width;$("case-image").height=c.height;
   $("case-figure-zoom").dataset.zoom=c.image;$("case-figure-zoom").dataset.caption=c.caption;
-  $("case-paper").href="assets/paper.pdf?v=cdf1d42ba4fd#page="+c.page;
+  $("case-paper").href="assets/paper.pdf?v=ceed38a8e94a#page="+c.page;
 });
 bindTabs(".code-tabs","code","code-panel",key=>{
   const scenario=integrationScenarios[key];
